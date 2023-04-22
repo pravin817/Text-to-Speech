@@ -1,0 +1,129 @@
+/* Import the Google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* CSS Reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(175, 241, 195);
+}
+
+::selection {
+    color: #fff;
+    background: green;
+}
+
+
+.wrapper {
+    width: 370px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: green;
+}
+
+.wrapper form {
+    margin: 35px 0 20px;
+}
+
+form .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .row label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form :where(textarea, select, button) {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+
+form .row textarea {
+    resize: none;
+    height: 110px;
+    border: 1px solid rgb(22, 110, 38);
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+form .row textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+form .row .outer {
+    height: 47px;
+    display: flex;
+    padding: 0 10px;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid rgb(22, 110, 38);
+}
+
+form .row select {
+    font-size: 14px;
+    background: none;
+}
+
+form .row select::-webkit-scrollbar {
+    width: 8px;
+}
+
+form .row select::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+form .row select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+form button {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 52px;
+    margin-top: 10px;
+    background: green;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(3, 165, 3);
+}
+
+@media (max-width:400px) {
+    .wrapper {
+        max-width: 345px;
+        width: 100%;
+    }
+} 
